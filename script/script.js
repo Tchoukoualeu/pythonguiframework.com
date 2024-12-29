@@ -6,6 +6,4 @@ function loadHeader() {
     })
 }
 
-console.log("here")
-
 loadHeader()
