@@ -1,39 +1,11 @@
 {
-  "redirects": [
-    {
-      "source": "/index.html",
-      "destination": "https://www.pythonguiframework.com/",
-      "permanent": true
-    },
-    {
-      "source": "/dearpygui.html",
-      "destination": "https://www.pythonguiframework.com/dearpygui/",
-      "permanent": true
-    },
-    {
-      "source": "/kivy.html",
-      "destination": "https://www.pythonguiframework.com/kivy/",
-      "permanent": true
-    },
-    {
-      "source": "/pygobject.html",
-      "destination": "https://www.pythonguiframework.com/pygobject/",
-      "permanent": true
-    },
-    {
-      "source": "/pyqt.html",
-      "destination": "https://www.pythonguiframework.com/pyqt/",
-      "permanent": true
-    },
-    {
-      "source": "/tkinter.html",
-      "destination": "https://www.pythonguiframework.com/tkinter/",
-      "permanent": true
-    },
-    {
-      "source": "/wxpython.html",
-      "destination": "https://www.pythonguiframework.com/wxpython/",
-      "permanent": true
-    }
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/dearpygui", "destination": "/dearpygui.html" },
+    { "source": "/kivy", "destination": "/kivy.html" },
+    { "source": "/pygobject", "destination": "/pygobject.html" },
+    { "source": "/pyqt", "destination": "/pyqt.html" },
+    { "source": "/tkinter", "destination": "/tkinter.html" },
+    { "source": "/wxpython", "destination": "/wxpython.html" }
   ]
 }
