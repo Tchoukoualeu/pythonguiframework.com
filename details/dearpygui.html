@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dear PyGui - Python GUI Framework</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <div class="max-w-4xl mx-auto px-4 py-8">
+      <a
+        href="../index.html"
+        class="text-blue-600 hover:text-blue-800 mb-6 inline-block"
+        >← Back to All Frameworks</a
+      >
+
+      <h1 class="text-4xl font-bold text-gray-800 mb-4">Dear PyGui</h1>
+      <p class="text-xl text-gray-600 mb-8">Fast and modern GUI framework</p>
+
+      <div class="prose max-w-none">
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Overview</h2>
+          <p class="whitespace-pre-wrap text-gray-600">
+            Dear PyGui is a fast and modern GUI framework that uses the GPU for
+            rendering. It's designed to be easy to use while providing high
+            performance and a modern look. Key Features: • GPU acceleration •
+            Modern design • High performance • Easy to use API • Rich plotting
+            capabilities Common Use Cases: • Data visualization • Real-time
+            applications • Scientific tools • Debug interfaces • Modern desktop
+            applications
+          </p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Installation</h2>
+          <pre
+            class="bg-gray-100 p-4 rounded-md"
+          ><code>pip install dearpygui</code></pre>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Example</h2>
+          <pre
+            class="bg-gray-100 p-4 rounded-md"
+          ><code>import dearpygui.dearpygui as dpg
+
+dpg.create_context()
+dpg.create_viewport()
+
+with dpg.window(label="Hello"):
+    dpg.add_text("Hello, World!")
+
+dpg.setup_dearpygui()
+dpg.show_viewport()
+dpg.start_dearpygui()
+dpg.destroy_context()</code></pre>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
