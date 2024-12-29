@@ -7,6 +7,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-gray-100">
+    <!-- Header -->
+    <div id="header"></div>
+
     <div class="max-w-4xl mx-auto px-4 py-8">
       <a
         href="../index.html"
@@ -20,15 +23,29 @@
       <div class="prose max-w-none">
         <div class="bg-white rounded-lg shadow-md p-6 mb-8">
           <h2 class="text-2xl font-bold text-gray-800 mb-4">Overview</h2>
-          <p class="whitespace-pre-wrap text-gray-600">
+          <p class="p-2 text-gray-600">
             wxPython is a cross-platform GUI toolkit for Python that provides a
             native look and feel on each platform. It's built on wxWidgets, a
-            C++ framework. Key Features: • Native widgets • Extensive widget set
-            • Advanced features like HTML rendering • Document/View architecture
-            • Built-in dialogs Common Use Cases: • Professional desktop
-            applications • Cross-platform tools • Business applications •
-            Scientific software • IDEs
+            C++ framework.
           </p>
+
+          <p class="p-2 text-gray-600">Key Features:</p>
+          <ul class="list-disc list-inside text-gray-600 mb-4">
+            <li>Native widgets</li>
+            <li>Extensive widget set</li>
+            <li>Advanced features like HTML rendering</li>
+            <li>Document/View architecture</li>
+            <li>Built-in dialogs</li>
+          </ul>
+
+          <p class="p-2 text-gray-600">Common Use Cases:</p>
+          <ul class="list-disc list-inside text-gray-600 mb-4">
+            <li>Professional desktop applications</li>
+            <li>Cross-platform tools</li>
+            <li>Business applications</li>
+            <li>Scientific software</li>
+            <li>IDEs</li>
+          </ul>
         </div>
 
         <div class="bg-white rounded-lg shadow-md p-6 mb-8">
@@ -38,17 +55,30 @@
           ><code>pip install wxPython</code></pre>
         </div>
 
-        <div class="bg-white rounded-lg shadow-md p-6">
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
           <h2 class="text-2xl font-bold text-gray-800 mb-4">Example</h2>
-          <pre class="bg-gray-100 p-4 rounded-md"><code>import wx
+          <pre class="bg-gray-100 p-4 rounded-md">
+            <code>
+import wx
 
 app = wx.App()
 frame = wx.Frame(None, title="Hello wxPython")
 text = wx.StaticText(frame, label="Hello, World!")
 frame.Show()
-app.MainLoop()</code></pre>
+app.MainLoop()
+            </code>
+            </pre>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Link</h2>
+          <p>
+            <a href="https://www.wxpython.org/" target="_blank">More details</a>
+          </p>
         </div>
       </div>
     </div>
+
+    <script src="../script/script.js"></script>
   </body>
 </html>
