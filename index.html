@@ -1,29 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python GUI Frameworks</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <div class="container mx-auto px-4 py-8">
+      <header class="text-center mb-12">
+        <h1 class="text-4xl font-bold text-gray-800 mb-4">
+          Python GUI Frameworks
+        </h1>
+        <p class="text-gray-600">
+          A curated list of popular Python GUI frameworks for desktop
+          applications
+        </p>
+      </header>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon | Python GUI Framework</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
-
-<body class="bg-gray-100 text-gray-900 min-h-screen flex flex-col items-center justify-center">
-
-    <main class="text-center px-4">
-        <h1 class="text-5xl font-bold text-green-500">Python GUI Framework</h1>
-        <p class="mt-6 text-2xl">Building intuitive interfaces effortlessly</p>
-        <p class="mt-2 text-lg">Our team is crafting an innovative GUI framework for Python developers. Stay tuned as we prepare to launch and empower your projects with easy-to-create interfaces.</p>
-        <div class="mt-8">
-            <a href="mailto:info@pythonguiframework.com"
-                class="text-green-600 hover:text-green-800 underline">Contact Us</a>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Tkinter -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h2 class="text-xl font-bold text-gray-800 mb-3">Tkinter</h2>
+          <p class="text-gray-600 mb-4">
+            Python's standard GUI library. Simple, lightweight, and comes
+            bundled with Python.
+          </p>
+          <div class="space-y-2">
+            <span
+              class="inline-block bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full"
+              >Built-in</span
+            >
+            <span
+              class="inline-block bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full"
+              >Beginner-friendly</span
+            >
+          </div>
         </div>
-    </main>
 
-    <footer class="absolute bottom-4 text-gray-600">
-        <p>&copy; 2023 Python GUI Framework</p>
-    </footer>
+        <!-- PyQt -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h2 class="text-xl font-bold text-gray-800 mb-3">PyQt</h2>
+          <p class="text-gray-600 mb-4">
+            Comprehensive framework based on Qt. Powerful with extensive
+            features and modern widgets.
+          </p>
+          <div class="space-y-2">
+            <span
+              class="inline-block bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full"
+              >Feature-rich</span
+            >
+            <span
+              class="inline-block bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full"
+              >Cross-platform</span
+            >
+          </div>
+        </div>
 
-</body>
+        <!-- wxPython -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h2 class="text-xl font-bold text-gray-800 mb-3">wxPython</h2>
+          <p class="text-gray-600 mb-4">
+            Native-looking applications with a robust set of widgets and tools.
+          </p>
+          <div class="space-y-2">
+            <span
+              class="inline-block bg-red-100 text-red-800 text-sm px-3 py-1 rounded-full"
+              >Native look</span
+            >
+            <span
+              class="inline-block bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full"
+              >Cross-platform</span
+            >
+          </div>
+        </div>
 
+        <!-- Kivy -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h2 class="text-xl font-bold text-gray-800 mb-3">Kivy</h2>
+          <p class="text-gray-600 mb-4">
+            Modern framework for multi-touch applications. Great for games and
+            interactive applications.
+          </p>
+          <div class="space-y-2">
+            <span
+              class="inline-block bg-indigo-100 text-indigo-800 text-sm px-3 py-1 rounded-full"
+              >Multi-touch</span
+            >
+            <span
+              class="inline-block bg-pink-100 text-pink-800 text-sm px-3 py-1 rounded-full"
+              >Mobile-friendly</span
+            >
+          </div>
+        </div>
+
+        <!-- PyGObject -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h2 class="text-xl font-bold text-gray-800 mb-3">PyGObject</h2>
+          <p class="text-gray-600 mb-4">
+            GTK bindings for Python, ideal for creating GNOME applications.
+          </p>
+          <div class="space-y-2">
+            <span
+              class="inline-block bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full"
+              >Linux-native</span
+            >
+            <span
+              class="inline-block bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full"
+              >GTK-based</span
+            >
+          </div>
+        </div>
+
+        <!-- Dear PyGui -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h2 class="text-xl font-bold text-gray-800 mb-3">Dear PyGui</h2>
+          <p class="text-gray-600 mb-4">
+            Fast and modern GUI framework with a focus on performance and
+            simplicity.
+          </p>
+          <div class="space-y-2">
+            <span
+              class="inline-block bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full"
+              >High-performance</span
+            >
+            <span
+              class="inline-block bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full"
+              >Modern design</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
