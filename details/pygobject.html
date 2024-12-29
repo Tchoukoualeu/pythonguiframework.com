@@ -21,15 +21,30 @@
       <div class="prose max-w-none">
         <div class="bg-white rounded-lg shadow-md p-6 mb-8">
           <h2 class="text-2xl font-bold text-gray-800 mb-4">Overview</h2>
-          <p class="whitespace-pre-wrap text-gray-600">
+          <p class="text-gray-600 p-2">
             PyGObject provides Python bindings for GObject libraries,
             particularly GTK. It's the primary way to create GTK applications in
-            Python and is especially popular in Linux environments. Key
-            Features: • Native GTK widgets • GObject integration • Modern GTK
-            features • Linux desktop integration • Extensive documentation
-            Common Use Cases: • Linux desktop applications • GNOME applications
-            • System tools • Development tools • Configuration utilities
+            Python and is especially popular in Linux environments.
           </p>
+
+          <p class="whitespace-pre-wrap text-gray-600 p-2">Key Features:</p>
+
+          <ul class="list-disc list-inside text-gray-600 mb-4">
+            <li>Native GTK widgets</li>
+            <li>GObject integration</li>
+            <li>Modern GTK features</li>
+            <li>Linux desktop integration</li>
+            <li>Extensive documentation</li>
+          </ul>
+
+          <p class="whitespace-pre-wrap text-gray-600 p-2">Common Use Cases:</p>
+          <ul class="list-disc list-inside text-gray-600 mb-4">
+            <li>Linux desktop applications</li>
+            <li>GNOME applications</li>
+            <li>System tools</li>
+            <li>Development tools</li>
+            <li>Configuration utilities</li>
+          </ul>
         </div>
 
         <div class="bg-white rounded-lg shadow-md p-6 mb-8">
@@ -39,7 +54,7 @@
           ><code>pip install PyGObject</code></pre>
         </div>
 
-        <div class="bg-white rounded-lg shadow-md p-6">
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
           <h2 class="text-2xl font-bold text-gray-800 mb-4">Example</h2>
           <pre class="bg-gray-100 p-4 rounded-md"><code>import gi
 gi.require_version('Gtk', '4.0')
@@ -54,6 +69,18 @@ class MainWindow(Gtk.Window):
 app = Gtk.Application()
 win = MainWindow()
 win.show()</code></pre>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Link</h2>
+          <p>
+            <a
+              href="https://pygobject.gnome.org/"
+              target="_blank"
+              class="text-blue-500 hover:text-blue-700 underline mb-4"
+              >More details</a
+            >
+          </p>
         </div>
       </div>
     </div>
