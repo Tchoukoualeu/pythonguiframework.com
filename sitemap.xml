@@ -7,37 +7,37 @@
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://www.pythonguiframework.com/details/dearpygui.html</loc>
+        <loc>https://www.pythonguiframework.com/dearpygui.html</loc>
         <lastmod>2023-10-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://www.pythonguiframework.com/details/kivy.html</loc>
+        <loc>https://www.pythonguiframework.com/kivy.html</loc>
         <lastmod>2023-10-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://www.pythonguiframework.com/details/pygobject.html</loc>
+        <loc>https://www.pythonguiframework.com/pygobject.html</loc>
         <lastmod>2023-10-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://www.pythonguiframework.com/details/pyqt.html</loc>
+        <loc>https://www.pythonguiframework.com/pyqt.html</loc>
         <lastmod>2023-10-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://www.pythonguiframework.com/details/tkinter.html</loc>
+        <loc>https://www.pythonguiframework.com/tkinter.html</loc>
         <lastmod>2023-10-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://www.pythonguiframework.com/details/wxpython.html</loc>
+        <loc>https://www.pythonguiframework.com/wxpython.html</loc>
         <lastmod>2023-10-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
