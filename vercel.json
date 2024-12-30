@@ -12,7 +12,7 @@
     { "source": "/flexx", "destination": "/flexx.html" },
     { "source": "/fltk", "destination": "/fltk.html" },
     { "source": "/gooey", "destination": "/gooey.html" },
-    { "source": "/gtk+", "destination": "/gtk+.html" },
+    { "source": "/gtk+", "destination": "/gtk.html" },
     { "source": "/kivymd", "destination": "/kivymd.html" },
     { "source": "/libavg", "destination": "/libavg.html" },
     { "source": "/pgu", "destination": "/pgu.html" },
@@ -24,6 +24,7 @@
     { "source": "/pytogui", "destination": "/pytogui.html" },
     { "source": "/remi", "destination": "/remi.html" },
     { "source": "/sl4a", "destination": "/sl4a.html" },
+    { "source": "/tkinter-designer", "destination": "/tkinter-designer.html" },
     { "source": "/toga", "destination": "/toga.html" },
     { "source": "/urwid", "destination": "/urwid.html" },
     { "source": "/wax", "destination": "/wax.html" }
