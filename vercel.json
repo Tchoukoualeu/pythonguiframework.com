@@ -11,6 +11,7 @@
     { "source": "/enaml", "destination": "/enaml.html" },
     { "source": "/flexx", "destination": "/flexx.html" },
     { "source": "/fltk", "destination": "/fltk.html" },
-    { "source": "/gooey", "destination": "/gooey.html" }
+    { "source": "/gooey", "destination": "/gooey.html" },
+    { "source": "/gtk", "destination": "/gtk.html" }
   ]
 }
