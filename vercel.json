@@ -23,6 +23,7 @@
     { "source": "/remi", "destination": "/remi.html" },
     { "source": "/sl4a", "destination": "/sl4a.html" },
     { "source": "/tkinter", "destination": "/tkinter.html" },
+    { "source": "/tkinter-designer", "destination": "/tkinter-designer.html" },
     { "source": "/toga", "destination": "/toga.html" },
     { "source": "/urwid", "destination": "/urwid.html" },
     { "source": "/wax", "destination": "/wax.html" },
