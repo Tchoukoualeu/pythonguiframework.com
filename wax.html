@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WAX - Python GUI Toolkit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Header -->
+    <div id="header"></div>
+
+    <div class="max-w-4xl mx-auto px-4 py-8">
+      <a href="/" class="text-blue-600 hover:text-blue-800 mb-6 inline-block"
+        >← Back to All Frameworks</a
+      >
+
+      <h1 class="text-4xl font-bold text-gray-800 mb-4">
+        WAX (Widgets for wxPython)
+      </h1>
+      <p class="text-xl text-gray-600 mb-8">
+        Simplified GUI toolkit for wxPython
+      </p>
+
+      <div class="prose max-w-none">
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Overview</h2>
+          <p class="text-gray-600 p-2">
+            WAX is a high-level Python GUI framework built on top of wxPython.
+            It aims to simplify the wxPython API and make GUI programming more
+            accessible to developers, providing cleaner and more Pythonic
+            syntax.
+          </p>
+
+          <p class="whitespace-pre-wrap text-gray-600 p-2">Key Features:</p>
+          <ul class="list-disc list-inside text-gray-600 mb-4">
+            <li>Simplifies wxPython API</li>
+            <li>Leverages native components for cross-platform applications</li>
+            <li>Focuses on ease of use and rapid development</li>
+            <li>Powerful layout management</li>
+            <li>Provides a cleaner syntax for building GUIs</li>
+          </ul>
+
+          <p class="whitespace-pre-wrap text-gray-600 p-2">Common Use Cases:</p>
+          <ul class="list-disc list-inside text-gray-600 mb-4">
+            <li>Desktop applications with native look and feel</li>
+            <li>Rapid prototyping of GUI applications</li>
+            <li>Applications needing simplified access to wxPython features</li>
+            <li>Educational purposes for GUI-based applications</li>
+            <li>Tools and utilities for cross-platform environments</li>
+          </ul>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Installation</h2>
+          <pre
+            class="bg-gray-100 p-4 rounded-md"
+          ><code># WAX is not actively maintained or available on PyPI
+# Installation usually involves manually downloading sources, ensure wxPython is installed
+
+pip install wxPython</code></pre>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Example</h2>
+          <pre
+            class="bg-gray-100 p-4 rounded-md"
+          ><code># Simple example assumes installation of WAX and wxPython
+# Please adjust imports based on the way WAX was installed
+
+import wax.core
+from wax.core import Application, Frame, Panel, Button
+
+class MainFrame(Frame):
+    def __init__(self):
+        super().__init__(title="Hello WAX")
+        panel = Panel(self)
+        button = Button(panel, label="Click me", event=self.on_click)
+        panel.AddComponent(button, expand='both')
+        panel.Pack()
+        self.AddComponent(panel, expand='both')
+        self.Pack()
+
+    def on_click(self, event):
+        print("Button clicked!")
+
+app = Application(MainFrame)
+app.Run()</code></pre>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Link</h2>
+          <p>
+            <a
+              href="http://wiki.wxpython.org/index.cgi/Wax"
+              target="_blank"
+              class="text-blue-500 hover:text-blue-700 underline mb-4"
+              >More details</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="../script/script.js"></script>
+  </body>
+</html>

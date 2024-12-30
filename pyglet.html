@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pyglet - Python Multimedia Library</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Header -->
+    <div id="header"></div>
+
+    <div class="max-w-4xl mx-auto px-4 py-8">
+      <a href="/" class="text-blue-600 hover:text-blue-800 mb-6 inline-block"
+        >← Back to All Frameworks</a
+      >
+
+      <h1 class="text-4xl font-bold text-gray-800 mb-4">Pyglet</h1>
+      <p class="text-xl text-gray-600 mb-8">
+        Powerful library for developing games and other visually-rich
+        applications
+      </p>
+
+      <div class="prose max-w-none">
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Overview</h2>
+          <p class="text-gray-600 p-2">
+            Pyglet is a cross-platform windowing and multimedia library for
+            Python, designed for developing applications involving gaming,
+            multimedia, and visualization. Its lightweight API provides access
+            to windowing, OpenGL graphics, images, and audio.
+          </p>
+
+          <p class="whitespace-pre-wrap text-gray-600 p-2">Key Features:</p>
+          <ul class="list-disc list-inside text-gray-600 mb-4">
+            <li>Cross-platform support (Windows, macOS, Linux)</li>
+            <li>No external dependencies or installation required</li>
+            <li>Intuitive support for OpenGL graphics</li>
+            <li>Image and audio loading capabilities</li>
+            <li>Support for events and scheduled functions</li>
+          </ul>
+
+          <p class="whitespace-pre-wrap text-gray-600 p-2">Common Use Cases:</p>
+          <ul class="list-disc list-inside text-gray-600 mb-4">
+            <li>2D and 3D games</li>
+            <li>Multimedia applications</li>
+            <li>Rich interactive applications</li>
+            <li>Prototyping visual and audio applications</li>
+            <li>Educational projects involving graphics and sound</li>
+          </ul>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Installation</h2>
+          <pre
+            class="bg-gray-100 p-4 rounded-md"
+          ><code>pip install pyglet</code></pre>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Example</h2>
+          <pre class="bg-gray-100 p-4 rounded-md"><code>import pyglet
+
+window = pyglet.window.Window()
+
+@window.event
+def on_draw():
+    window.clear()
+    pyglet.text.Label('Hello, Pyglet!',
+                      font_name='Times New Roman',
+                      font_size=36,
+                      x=window.width//2, y=window.height//2,
+                      anchor_x='center', anchor_y='center').draw()
+
+pyglet.app.run()</code></pre>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Link</h2>
+          <p>
+            <a
+              href="https://pyglet.readthedocs.io/en/latest/"
+              target="_blank"
+              class="text-blue-500 hover:text-blue-700 underline mb-4"
+              >More details</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="../script/script.js"></script>
+  </body>
+</html>

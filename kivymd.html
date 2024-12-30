@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KivyMD - Material Design for Kivy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Header -->
+    <div id="header"></div>
+
+    <div class="max-w-4xl mx-auto px-4 py-8">
+      <a href="/" class="text-blue-600 hover:text-blue-800 mb-6 inline-block"
+        >← Back to All Frameworks</a
+      >
+
+      <h1 class="text-4xl font-bold text-gray-800 mb-4">KivyMD</h1>
+      <p class="text-xl text-gray-600 mb-8">
+        Material Design components for the Kivy framework
+      </p>
+
+      <div class="prose max-w-none">
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Overview</h2>
+          <p class="text-gray-600 p-2">
+            KivyMD is a collection of Material Design compliant widgets for use
+            with the Kivy cross-platform UI framework. It enhances the visual
+            appeal of applications by providing a variety of pre-designed,
+            easy-to-use UI components that follow Google's Material Design
+            principles.
+          </p>
+
+          <p class="whitespace-pre-wrap text-gray-600 p-2">Key Features:</p>
+          <ul class="list-disc list-inside text-gray-600 mb-4">
+            <li>Comprehensive set of Material Design widgets</li>
+            <li>Seamless integration with Kivy applications</li>
+            <li>
+              Cross-platform support (Windows, macOS, Linux, Android, iOS)
+            </li>
+            <li>Responsive designs for different devices and screen sizes</li>
+            <li>Customizable themes and colors</li>
+          </ul>
+
+          <p class="whitespace-pre-wrap text-gray-600 p-2">Common Use Cases:</p>
+          <ul class="list-disc list-inside text-gray-600 mb-4">
+            <li>Building mobile apps with modern UI/UX</li>
+            <li>Developing desktop applications with a polished look</li>
+            <li>Creating responsive applications for various devices</li>
+            <li>
+              Implementing user interfaces with Material Design principles
+            </li>
+            <li>Prototyping and testing UI concepts rapidly</li>
+          </ul>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Installation</h2>
+          <pre class="bg-gray-100 p-4 rounded-md"><code>pip install kivy
+pip install kivymd</code></pre>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Example</h2>
+          <pre
+            class="bg-gray-100 p-4 rounded-md"
+          ><code>from kivy.lang import Builder
+from kivy.uix.screenmanager import Screen
+from kivymd.app import MDApp
+from kivymd.uix.button import MDFloatingActionButton
+from kivymd.uix.label import MDLabel
+
+KV = '''
+Screen:
+    MDFloatingActionButton:
+        icon: "plus"
+        pos_hint: {"center_x": .5, "center_y": .5}
+        on_release:
+            app.on_button_press()
+'''
+
+class ExampleApp(MDApp):
+    def build(self):
+        return Builder.load_string(KV)
+
+    def on_button_press(self):
+        print("Button Pressed!")
+
+if __name__ == "__main__":
+    ExampleApp().run()</code></pre>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Link</h2>
+          <p>
+            <a
+              href="https://kivymd.readthedocs.io/"
+              target="_blank"
+              class="text-blue-500 hover:text-blue-700 underline mb-4"
+              >More details</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="../script/script.js"></script>
+  </body>
+</html>

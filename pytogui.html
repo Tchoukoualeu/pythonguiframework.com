@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PyAutoGUI - Automate GUI Tasks in Python</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Header -->
+    <div id="header"></div>
+
+    <div class="max-w-4xl mx-auto px-4 py-8">
+      <a href="/" class="text-blue-600 hover:text-blue-800 mb-6 inline-block"
+        >← Back to All Frameworks</a
+      >
+
+      <h1 class="text-4xl font-bold text-gray-800 mb-4">PyAutoGUI</h1>
+      <p class="text-xl text-gray-600 mb-8">
+        Automate and control the mouse and keyboard in Python
+      </p>
+
+      <div class="prose max-w-none">
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Overview</h2>
+          <p class="text-gray-600 p-2">
+            PyAutoGUI is a cross-platform GUI automation module for Python. It
+            allows you to control the mouse and keyboard, perform image
+            recognition, and automate repetitive tasks across different
+            applications and operating systems.
+          </p>
+
+          <p class="whitespace-pre-wrap text-gray-600 p-2">Key Features:</p>
+          <ul class="list-disc list-inside text-gray-600 mb-4">
+            <li>Programmatically control the mouse and keyboard</li>
+            <li>Perform screen capture and image recognition</li>
+            <li>Automate repetitive GUI tasks</li>
+            <li>Cross-platform support for macOS, Windows, and Linux</li>
+            <li>Simple API for ease of use</li>
+          </ul>
+
+          <p class="whitespace-pre-wrap text-gray-600 p-2">Common Use Cases:</p>
+          <ul class="list-disc list-inside text-gray-600 mb-4">
+            <li>Automating data entry tasks</li>
+            <li>Testing applications by simulating user inputs</li>
+            <li>Creating scripts to control applications</li>
+            <li>Generating automated reports using screenshots</li>
+          </ul>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Installation</h2>
+          <pre
+            class="bg-gray-100 p-4 rounded-md"
+          ><code>pip install pyautogui</code></pre>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Example</h2>
+          <pre class="bg-gray-100 p-4 rounded-md"><code>import pyautogui
+import time
+
+# Get screen resolution
+screen_width, screen_height = pyautogui.size()
+
+# Move the mouse to the center of the screen
+pyautogui.moveTo(screen_width / 2, screen_height / 2, duration=1)
+
+# Click the mouse
+pyautogui.click()
+
+# Enter text
+pyautogui.typewrite('Hello, world!', interval=0.1)
+
+# Take a screenshot
+screenshot = pyautogui.screenshot()
+screenshot.save("screenshot.png")</code></pre>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Link</h2>
+          <p>
+            <a
+              href="https://pyautogui.readthedocs.io/en/latest/"
+              target="_blank"
+              class="text-blue-500 hover:text-blue-700 underline mb-4"
+              >More details</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="../script/script.js"></script>
+  </body>
+</html>

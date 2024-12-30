@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SL4A - Scripting Layer for Android</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Header -->
+    <div id="header"></div>
+
+    <div class="max-w-4xl mx-auto px-4 py-8">
+      <a href="/" class="text-blue-600 hover:text-blue-800 mb-6 inline-block"
+        >← Back to All Frameworks</a
+      >
+
+      <h1 class="text-4xl font-bold text-gray-800 mb-4">SL4A</h1>
+      <p class="text-xl text-gray-600 mb-8">
+        Scripting Layer for Android - Bringing Python and other languages to
+        Android
+      </p>
+
+      <div class="prose max-w-none">
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Overview</h2>
+          <p class="text-gray-600 p-2">
+            SL4A (Scripting Layer for Android) provides a platform for running
+            Python and other scripting languages on Android devices. It allows
+            developers to write scripts that can access many of the Android APIs
+            and automate tasks or develop mobile applications quickly.
+          </p>
+
+          <p class="whitespace-pre-wrap text-gray-600 p-2">Key Features:</p>
+          <ul class="list-disc list-inside text-gray-600 mb-4">
+            <li>
+              Supports multiple scripting languages including Python, Ruby, and
+              Lua
+            </li>
+            <li>Access to various Android APIs</li>
+            <li>Facilitates rapid development and prototyping</li>
+            <li>
+              Ability to run scripts interactively or schedule them for later
+            </li>
+            <li>Lightweight and easy to deploy on Android</li>
+          </ul>
+
+          <p class="whitespace-pre-wrap text-gray-600 p-2">Common Use Cases:</p>
+          <ul class="list-disc list-inside text-gray-600 mb-4">
+            <li>Automating tasks on Android devices</li>
+            <li>Rapid prototyping of mobile applications</li>
+            <li>Creating utility scripts for everyday use</li>
+            <li>Developing educational tools for Android</li>
+            <li>Integrating Python scripts with Android hardware features</li>
+          </ul>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Installation</h2>
+          <pre
+            class="bg-gray-100 p-4 rounded-md"
+          ><code># SL4A setup is usually performed directly on your Android device.
+
+# 1. Install SL4A APK on your Android device.
+# 2. Install Python for Android APK from the repository or official source.
+
+# Note: Check the SL4A and Python for Android community pages for the latest installation guides and updates.</code></pre>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Example</h2>
+          <pre class="bg-gray-100 p-4 rounded-md"><code>#! /usr/bin/env python
+# Make sure the first line contains a valid shebang to allow it to run
+
+import android
+
+# Create an Android object to interact with API
+droid = android.Android()
+
+# Display a simple dialogue
+droid.makeToast('Hello from SL4A!')</code></pre>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Link</h2>
+          <p>
+            <a
+              href="https://github.com/damonkohler/sl4a"
+              target="_blank"
+              class="text-blue-500 hover:text-blue-700 underline mb-4"
+              >More details</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="../script/script.js"></script>
+  </body>
+</html>

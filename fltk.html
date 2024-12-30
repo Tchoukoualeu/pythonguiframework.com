@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FLTK - Lightweight GUI Toolkit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Header -->
+    <div id="header"></div>
+
+    <div class="max-w-4xl mx-auto px-4 py-8">
+      <a href="/" class="text-blue-600 hover:text-blue-800 mb-6 inline-block"
+        >← Back to All Frameworks</a
+      >
+
+      <h1 class="text-4xl font-bold text-gray-800 mb-4">FLTK</h1>
+      <p class="text-xl text-gray-600 mb-8">
+        Lightweight and cross-platform GUI toolkit
+      </p>
+
+      <div class="prose max-w-none">
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Overview</h2>
+          <p class="text-gray-600 p-2">
+            FLTK (Fast, Light Toolkit) is a cross-platform C++ GUI toolkit that
+            offers a simple and efficient way to create graphical user
+            interfaces. FLTK is designed to be small and lightweight, making it
+            particularly well-suited for applications that require minimal
+            resource usage.
+          </p>
+
+          <p class="whitespace-pre-wrap text-gray-600 p-2">Key Features:</p>
+          <ul class="list-disc list-inside text-gray-600 mb-4">
+            <li>Minimalistic design for low resource consumption</li>
+            <li>Cross-platform support (Windows, macOS, Linux)</li>
+            <li>C++ based, enabling efficient performance</li>
+            <li>Includes a variety of widgets and controls</li>
+            <li>OpenGL support for graphics-intensive applications</li>
+          </ul>
+
+          <p class="whitespace-pre-wrap text-gray-600 p-2">Common Use Cases:</p>
+          <ul class="list-disc list-inside text-gray-600 mb-4">
+            <li>Simple and lightweight desktop applications</li>
+            <li>Embedded systems requiring GUIs</li>
+            <li>Cross-platform tools and utilities</li>
+            <li>Applications needing minimal setup and dependencies</li>
+            <li>
+              Education and research projects needing graphical interfaces
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Installation</h2>
+          <pre
+            class="bg-gray-100 p-4 rounded-md"
+          ><code># Install FLTK from source or package manager
+# On Linux-based systems
+sudo apt-get install libfltk1.3-dev
+
+# Building FLTK applications usually involves C++ toolchains</code></pre>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Example</h2>
+          <pre class="bg-gray-100 p-4 rounded-md"><code>#include &lt;FL/Fl.H&gt;
+#include &lt;FL/Fl_Window.H&gt;
+#include &lt;FL/Fl_Button.H&gt;
+
+void button_callback(Fl_Widget* widget, void* data) {
+    fl_message("Button clicked!");
+}
+
+int main() {
+    Fl_Window* window = new Fl_Window(340, 180, "Simple FLTK Example");
+    Fl_Button* button = new Fl_Button(20, 40, 300, 100, "Click Me");
+    button->callback(button_callback);
+    
+    window->end();
+    window->show();
+    
+    return Fl::run();
+}</code></pre>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Link</h2>
+          <p>
+            <a
+              href="http://www.fltk.org/"
+              target="_blank"
+              class="text-blue-500 hover:text-blue-700 underline mb-4"
+              >More details</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="../script/script.js"></script>
+  </body>
+</html>

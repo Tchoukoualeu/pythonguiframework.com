@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tkinter Designer - GUI Design Tool</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Header -->
+    <div id="header"></div>
+
+    <div class="max-w-4xl mx-auto px-4 py-8">
+      <a href="/" class="text-blue-600 hover:text-blue-800 mb-6 inline-block"
+        >← Back to All Tools</a
+      >
+
+      <h1 class="text-4xl font-bold text-gray-800 mb-4">Tkinter Designer</h1>
+      <p class="text-xl text-gray-600 mb-8">
+        Bridging Figma designs with Tkinter to streamline GUI creation
+      </p>
+
+      <div class="prose max-w-none">
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Overview</h2>
+          <p class="text-gray-600 p-2">
+            Tkinter Designer is a tool that allows you to design your GUI
+            applications visually using Figma, a cloud-based design tool, and
+            export these designs to Tkinter-compatible Python code. It helps
+            streamline the design-to-code process, making it more efficient for
+            developers to create polished interfaces without deep diving into
+            manual Tkinter coding.
+          </p>
+
+          <p class="whitespace-pre-wrap text-gray-600 p-2">Key Features:</p>
+          <ul class="list-disc list-inside text-gray-600 mb-4">
+            <li>Seamless integration with Figma for visual design</li>
+            <li>Automatic conversion of designs to Tkinter code</li>
+            <li>Ease of use in building complex interfaces</li>
+            <li>Reduces manual coding errors</li>
+            <li>Facilitates rapid prototyping and iteration</li>
+          </ul>
+
+          <p class="whitespace-pre-wrap text-gray-600 p-2">Common Use Cases:</p>
+          <ul class="list-disc list-inside text-gray-600 mb-4">
+            <li>Rapid prototyping of Tkinter applications</li>
+            <li>Developing visual interfaces with less manual coding</li>
+            <li>
+              Projects needing a streamlined design-to-development workflow
+            </li>
+            <li>Improving collaboration between designers and developers</li>
+            <li>Educational projects that teach GUI development</li>
+          </ul>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Installation</h2>
+          <pre
+            class="bg-gray-100 p-4 rounded-md"
+          ><code>pip install tkinter-designer</code></pre>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Example</h2>
+          <pre
+            class="bg-gray-100 p-4 rounded-md"
+          ><code># Sample usage of Tkinter Designer
+# This assumes you have a Figma file and API set up
+from tkinter_designer import convert
+
+# Configuration
+FIGMA_URL = 'https://www.figma.com/file/YOUR_FILE_ID'
+OUTPUT_PATH = 'output/'  # Where to save your Tkinter app
+
+# Convert the Figma design to Tkinter application
+convert(FIGMA_URL, 'FIGMA_TOKEN', OUTPUT_PATH)</code></pre>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Link</h2>
+          <p>
+            <a
+              href="https://github.com/ParthJadhav/Tkinter-Designer"
+              target="_blank"
+              class="text-blue-500 hover:text-blue-700 underline mb-4"
+              >More details</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="../script/script.js"></script>
+  </body>
+</html>

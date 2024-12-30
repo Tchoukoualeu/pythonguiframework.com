@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Urwid - Python Text-Based UI Framework</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Header -->
+    <div id="header"></div>
+
+    <div class="max-w-4xl mx-auto px-4 py-8">
+      <a href="/" class="text-blue-600 hover:text-blue-800 mb-6 inline-block"
+        >← Back to All Frameworks</a
+      >
+
+      <h1 class="text-4xl font-bold text-gray-800 mb-4">Urwid</h1>
+      <p class="text-xl text-gray-600 mb-8">
+        Powerful and flexible library for creating console user interfaces
+      </p>
+
+      <div class="prose max-w-none">
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Overview</h2>
+          <p class="text-gray-600 p-2">
+            Urwid is a flexible and comprehensive Python library used to create
+            text-based user interfaces for terminal applications. It enables
+            developing console applications with rich user interactivity and
+            custom layouts.
+          </p>
+
+          <p class="whitespace-pre-wrap text-gray-600 p-2">Key Features:</p>
+          <ul class="list-disc list-inside text-gray-600 mb-4">
+            <li>Rich set of widgets for building custom UI</li>
+            <li>Supports styles and themes</li>
+            <li>Responsive layout management</li>
+            <li>Input handling for mouse and keyboard</li>
+            <li>Designed for dynamic changes and animations</li>
+          </ul>
+
+          <p class="whitespace-pre-wrap text-gray-600 p-2">Common Use Cases:</p>
+          <ul class="list-disc list-inside text-gray-600 mb-4">
+            <li>Text-based consoles and dashboards</li>
+            <li>System monitoring tools</li>
+            <li>CLI utilities requiring a UI</li>
+            <li>Interactive terminal applications</li>
+            <li>Embedded systems with TUI requirements</li>
+          </ul>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Installation</h2>
+          <pre
+            class="bg-gray-100 p-4 rounded-md"
+          ><code>pip install urwid</code></pre>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Example</h2>
+          <pre class="bg-gray-100 p-4 rounded-md"><code>import urwid
+
+def on_exit(key):
+    if key == 'q':
+        raise urwid.ExitMainLoop()
+
+txt = urwid.Text("Hello, Urwid!", align='center')
+fill = urwid.Filler(txt, valign='middle')
+loop = urwid.MainLoop(fill, unhandled_input=on_exit)
+loop.run()</code></pre>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Link</h2>
+          <p>
+            <a
+              href="https://urwid.org/"
+              target="_blank"
+              class="text-blue-500 hover:text-blue-700 underline mb-4"
+              >More details</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="../script/script.js"></script>
+  </body>
+</html>

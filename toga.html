@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toga - Python GUI Framework</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Header -->
+    <div id="header"></div>
+
+    <div class="max-w-4xl mx-auto px-4 py-8">
+      <a href="/" class="text-blue-600 hover:text-blue-800 mb-6 inline-block"
+        >← Back to All Frameworks</a
+      >
+
+      <h1 class="text-4xl font-bold text-gray-800 mb-4">Toga</h1>
+      <p class="text-xl text-gray-600 mb-8">
+        Native, cross-platform GUI toolkit for Python
+      </p>
+
+      <div class="prose max-w-none">
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Overview</h2>
+          <p class="text-gray-600 p-2">
+            Toga is a Python-native, OS-native, cross-platform GUI toolkit. It
+            is designed to make it easy to write applications with a native look
+            and feel, using the same code on all supported platforms.
+          </p>
+
+          <p class="whitespace-pre-wrap text-gray-600 p-2">Key Features:</p>
+          <ul class="list-disc list-inside text-gray-600 mb-4">
+            <li>Consistent API across platforms</li>
+            <li>Pure Python code</li>
+            <li>Native widgets</li>
+            <li>Open source and highly extensible</li>
+            <li>Active community and support</li>
+          </ul>
+
+          <p class="whitespace-pre-wrap text-gray-600 p-2">Common Use Cases:</p>
+          <ul class="list-disc list-inside text-gray-600 mb-4">
+            <li>Creating native desktop applications</li>
+            <li>Cross-platform GUI applications</li>
+            <li>Prototyping applications quickly</li>
+            <li>Educational tools and software</li>
+            <li>Apps with a native user experience</li>
+          </ul>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Installation</h2>
+          <pre
+            class="bg-gray-100 p-4 rounded-md"
+          ><code>pip install toga</code></pre>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Example</h2>
+          <pre class="bg-gray-100 p-4 rounded-md"><code>import toga
+from toga.style import Pack
+from toga.style.pack import COLUMN, CENTER
+
+
+def build(app):
+    box = toga.Box()
+
+    name_input = toga.TextInput(placeholder='Your name', style=Pack(flex=1))
+    greeting_label = toga.Label('Hello, World!', style=Pack(padding=5))
+
+    def greet(widget):
+        greeting_label.text = f'Hello, {name_input.value}!'
+
+    greet_button = toga.Button(
+        'Greet',
+        on_press=greet,
+        style=Pack(flex=1)
+    )
+
+    box.add(name_input)
+    box.add(greet_button)
+    box.add(greeting_label)
+    box.style.update(direction=COLUMN, alignment=CENTER, padding=10)
+
+    return box
+
+
+def main():
+    return toga.App('Toga Example', 'org.pybee.helloworld', startup=build)
+
+
+if __name__ == '__main__':
+    main().main_loop()</code></pre>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Link</h2>
+          <p>
+            <a
+              href="https://toga.readthedocs.io/en/latest/"
+              target="_blank"
+              class="text-blue-500 hover:text-blue-700 underline mb-4"
+              >More details</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="../script/script.js"></script>
+  </body>
+</html>

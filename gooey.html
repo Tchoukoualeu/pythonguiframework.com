@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gooey - Python GUI Framework</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Header -->
+    <div id="header"></div>
+
+    <div class="max-w-4xl mx-auto px-4 py-8">
+      <a href="/" class="text-blue-600 hover:text-blue-800 mb-6 inline-block"
+        >← Back to All Frameworks</a
+      >
+
+      <h1 class="text-4xl font-bold text-gray-800 mb-4">Gooey</h1>
+      <p class="text-xl text-gray-600 mb-8">
+        Turn command-line programs into user-friendly GUIs
+      </p>
+
+      <div class="prose max-w-none">
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Overview</h2>
+          <p class="text-gray-600 p-2">
+            Gooey is a Python library that transforms command-line programs into
+            a full-fledged GUI application with no additional code, making it
+            more approachable for end-users without technical expertise.
+          </p>
+
+          <p class="whitespace-pre-wrap text-gray-600 p-2">Key Features:</p>
+          <ul class="list-disc list-inside text-gray-600 mb-4">
+            <li>Automatically generates a GUI from argparse</li>
+            <li>Cross-platform support (Windows, macOS, Linux)</li>
+            <li>Customizable with themes and styles</li>
+            <li>No need for separate GUI code</li>
+            <li>Supports all argparse types</li>
+          </ul>
+
+          <p class="whitespace-pre-wrap text-gray-600 p-2">Common Use Cases:</p>
+          <ul class="list-disc list-inside text-gray-600 mb-4">
+            <li>Making scripts user-friendly with a GUI</li>
+            <li>Tools for end-users with minimal technical skills</li>
+            <li>Internal applications for teams</li>
+            <li>Rapid deployment of utility scripts</li>
+            <li>Prototyping command line tools as GUI apps</li>
+          </ul>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Installation</h2>
+          <pre
+            class="bg-gray-100 p-4 rounded-md"
+          ><code>pip install Gooey</code></pre>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Example</h2>
+          <pre
+            class="bg-gray-100 p-4 rounded-md"
+          ><code>from gooey import Gooey, GooeyParser
+
+@Gooey(program_name="Sample Gooey App")
+def main():
+    parser = GooeyParser(description="Example of using Gooey")
+    parser.add_argument('Name', help="Enter your name")
+    parser.add_argument('Age', type=int, help="Enter your age")
+    parser.add_argument('--verbose', action='store_true', help="Enable verbose output")
+
+    args = parser.parse_args()
+    print(f"Hello {args.Name}! You are {args.Age} years old.")
+    if args.verbose:
+        print("Verbose mode is enabled")
+
+if __name__ == "__main__":
+    main()</code></pre>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Link</h2>
+          <p>
+            <a
+              href="https://github.com/chriskiehl/Gooey"
+              target="_blank"
+              class="text-blue-500 hover:text-blue-700 underline mb-4"
+              >More details</a
+            >
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="../script/script.js"></script>
+  </body>
+</html>

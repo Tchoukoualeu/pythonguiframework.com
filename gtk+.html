@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GTK+ - Python GUI Framework</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Header -->
+    <div id="header"></div>
+
+    <div class="max-w-4xl mx-auto px-4 py-8">
+      <a href="/" class="text-blue-600 hover:text-blue-800 mb-6 inline-block"
+        >← Back to All Frameworks</a
+      >
+
+      <h1 class="text-4xl font-bold text-gray-800 mb-4">GTK+</h1>
+      <p class="text-xl text-gray-600 mb-8">
+        Powerful toolkit for creating graphical user interfaces
+      </p>
+
+      <div class="prose max-w-none">
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Overview</h2>
+          <p class="text-gray-600 p-2">
+            GTK+ is a widely used, robust multi-platform toolkit for creating
+            graphical user interfaces. It powers many Linux desktops and offers
+            cross-platform support for Linux, Windows, and macOS. With
+            PyGObject, Python developers can utilize GTK+ for building dynamic
+            GUIs.
+          </p>
+
+          <p class="whitespace-pre-wrap text-gray-600 p-2">Key Features:</p>
+          <ul class="list-disc list-inside text-gray-600 mb-4">
+            <li>Rich set of modern and traditional UI elements</li>
+            <li>Cross-platform capabilities</li>
+            <li>Accessible and internationalized development</li>
+            <li>Native look and feel on all platforms</li>
+            <li>Highly customizable and scalable</li>
+          </ul>
+
+          <p class="whitespace-pre-wrap text-gray-600 p-2">Common Use Cases:</p>
+          <ul class="list-disc list-inside text-gray-600 mb-4">
+            <li>Desktop applications on Linux, Windows, and macOS</li>
+            <li>Tools requiring rich graphic elements</li>
+            <li>Enterprise software with GUI components</li>
+            <li>
+              Cross-platform development targeting different operating systems
+            </li>
+            <li>Embedded systems with GUI interfaces</li>
+          </ul>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Installation</h2>
+          <pre
+            class="bg-gray-100 p-4 rounded-md"
+          ><code># Install GTK+ development libraries and PyGObject bindings
+# On Debian-based systems, you might use:
+sudo apt-get install python3-gi python3-gi-cairo gir1.2-gtk-3.0
+
+# Ensure that you have installed GTK+ dependencies for your platform</code></pre>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Example</h2>
+          <pre class="bg-gray-100 p-4 rounded-md"><code>import gi
+gi.require_version("Gtk", "3.0")
+from gi.repository import Gtk
+
+class MyWindow(Gtk.Window):
+    def __init__(self):
+        super().__init__(title="Hello GTK+")
+        self.set_default_size(200, 100)
+
+        button = Gtk.Button(label="Click Me")
+        button.connect("clicked", self.on_button_clicked)
+        self.add(button)
+
+    def on_button_clicked(self, widget):
+        print("Hello World")
+
+win = MyWindow()
+win.connect("destroy", Gtk.main_quit)
+win.show_all()
+Gtk.main()</code></pre>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Link</h2>
+          <p>
+            <a
+              href="https://www.gtk.org/"
+              target="_blank"
+              class="text-blue-500 hover:text-blue-700 underline mb-4"
+              >More details</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="../script/script.js"></script>
+  </body>
+</html>
