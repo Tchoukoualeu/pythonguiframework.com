@@ -27,6 +27,11 @@
     { "source": "/toga", "destination": "/toga.html" },
     { "source": "/urwid", "destination": "/urwid.html" },
     { "source": "/wax", "destination": "/wax.html" },
-    { "source": "/wxpython", "destination": "/wxpython.html" }
+    { "source": "/wxpython", "destination": "/wxpython.html" },
+    { "source": "/advertise", "destination": "/advertise.html" },
+    {
+      "source": "/submit-new-framework",
+      "destination": "/submit-new-framework.html"
+    }
   ]
 }
