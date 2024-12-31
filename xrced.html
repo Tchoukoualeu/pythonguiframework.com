@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XRCed - GUI Layout Editor for wxPython</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Header -->
+    <div id="header"></div>
+
+    <div class="max-w-4xl mx-auto px-4 py-8">
+      <a href="/" class="text-blue-600 hover:text-blue-800 mb-6 inline-block"
+        >← Back to All Tools</a
+      >
+
+      <h1 class="text-4xl font-bold text-gray-800 mb-4">XRCed</h1>
+      <p class="text-xl text-gray-600 mb-8">
+        Powerful XRC editor for wxPython GUI design
+      </p>
+
+      <div class="prose max-w-none">
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Overview</h2>
+          <p class="text-gray-600 p-2">
+            XRCed is a graphical user interface layout editor for wxPython,
+            enabling developers to design GUIs via XRC, an XML-based resource
+            system. It helps in building interfaces without writing code, with
+            easy drag-and-drop support.
+          </p>
+
+          <p class="whitespace-pre-wrap text-gray-600 p-2">Key Features:</p>
+          <ul class="list-disc list-inside text-gray-600 mb-4">
+            <li>Drag-and-drop GUI design</li>
+            <li>Support for wxWidgets components</li>
+            <li>Real-time preview of designed interfaces</li>
+            <li>Integration with wxPython projects</li>
+            <li>XRC format generation for easy resource management</li>
+          </ul>
+
+          <p class="whitespace-pre-wrap text-gray-600 p-2">Common Use Cases:</p>
+          <ul class="list-disc list-inside text-gray-600 mb-4">
+            <li>Rapid prototyping of wxPython GUIs</li>
+            <li>Design of complex layouts for desktop apps</li>
+            <li>Easy management of GUI resources with XML</li>
+            <li>Collaborative interface design in teams</li>
+            <li>Streamlining wxPython application development</li>
+          </ul>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Installation</h2>
+          <pre class="bg-gray-100 p-4 rounded-md">
+<code>pip install xrced</code></pre>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Example</h2>
+          <pre class="bg-gray-100 p-4 rounded-md">
+<code>
+# Example XRC Usage in wxPython
+import wx
+import wx.xrc
+
+app = wx.App(False)
+frame = wx.Frame(None)
+
+# Assuming 'example.xrc' is created using XRCed
+resource = wx.xrc.XmlResource('example.xrc')
+panel = resource.LoadPanel(frame, 'main_panel')
+
+frame.Show()
+app.MainLoop()
+</code></pre>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Link</h2>
+          <p>
+            <a
+              href="#"
+              target="_blank"
+              class="text-blue-500 hover:text-blue-700 underline mb-4"
+              >More details</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="../script/script.js"></script>
+  </body>
+</html>
